@@ -5,6 +5,12 @@ findBtn.addEventListener('click', () => {
   scrollIntoView('#rabbit');
 });
 
+rabbit.addEventListener('click', () => {
+  const rect = rabbit.getBoundingClientRect();
+  console.log(rect);
+  alert('Found out!');
+});
+
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
 
