@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+.findBtn {
+  font-size: 16px;
+  padding: 0.2rem 0.5rem;
+  margin: 1rem 0;
+  border: 1px solid gray;
+  border-radius: 0.25rem;
+  color: wheat;
+  background-color: orange;
+  transition: all 250ms ease-in;
+}
+
+.findBtn:hover {
+  color: black;
+  background-color: orangered;
+  transform: scale(1.1);
+}
+
+img {
+  max-width: 150px;
+  max-height: 150px;
+  margin-bottom: 1rem;
+}
+
+.arrow-up {
+  display: block;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  opacity: 0;
+  pointer-events: none;
+  font-size: 28px;
+  border-radius: 50%;
+  transition: all 250ms ease-in;
+}
+
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.arrow-up:hover {
+  background-color: red;
+}
